@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    
+    <title>Calculadora Memoria</title>
+</head>
+
+<body class="container">
+    <section class="calculadora">
+    <header><a href="#" class="botaoex">Conversor de Memoria</a></header>
+    <section class="form">
+
+        <DIV class="seletores">
+        <p>informe a unidade a ser convertida</p>
+        <select id="valorBase" class="select">
+            <option value="1"> Bit </option>
+            <option value="2" > Byte</option>
+            <option value="3" > KiloByte</option>
+            <option value="4" > Megabyte</option>
+            <option value="5" > Gigabyte</option>
+            <option value="6" > Terabyte</option>
+            <option value="7" > Petabyte</option>
+            </select>
+        </DIV>
+
+        <div>
+            <p>Digite o valor a ser convertido: </p>
+            <input type="number" class="numero1" id="valor1">
+        </div>
+
+
+        <div class="seletores">
+            <p>Informe a unidade para a qual sera convertida</p>
+            <select id="valorConv" class="select">
+            <option value="1"> Bit </option>
+            <option value="2" > Byte</option>
+            <option value="3" > KiloByte</option>
+            <option value="4" > Megabyte</option>
+            <option value="5" > Gigabyte</option>
+            <option value="6" > Terabyte</option>
+            <option value="7" > Petabyte</option>
+            </select>
+
+        </div>
+
+        <div>
+            <p>o resultado é: <span id="resultado" ></span></p>
+        </div>
+
+        <button class="botaoC" onclick="calcular()"> Calcular </button>
+    
+        
+    </section>
+    </section>
+</body>
+
+
+
+<script src="main.js">
+</script>
+
+
+</html>
